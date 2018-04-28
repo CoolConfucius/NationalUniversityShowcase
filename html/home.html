@@ -1,5 +1,4 @@
-<div class="container" ng-class="{dark: lightsout}">
-    <div class="centerblock centertext">
+<div class="container home centertext" ng-class="{dark: lightsout}">    
       <h1>Welcome to</h1>
       <div ng-if="!lightsout" class="jumbotron text-center">
         <h1><b>Benjamin Huang's</b></h1>
@@ -7,6 +6,8 @@
       </div>
       <h1 ng-if="lightsout"><b>Benjamin Huang's</b></h1>
       <h2 ng-if="lightsout"><b>Showcase</b></h2>
-    </div>
     <br>
+        <button ui-sref="tpes" class="btn btn-primary">Go to TPEs</button>
+        <button ui-sref="resume" class="btn btn-primary">View My Extended Resume</button>      
+    </ul>
 </div>

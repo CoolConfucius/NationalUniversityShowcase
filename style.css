@@ -75,3 +75,7 @@ div.dark ul li ul li {
 div.hidedeets ul li p {
   display: none;
 }
+
+.home {
+  height: 700px;
+}
