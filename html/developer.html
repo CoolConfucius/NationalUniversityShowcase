@@ -1,0 +1,225 @@
+<div class="container" ng-class="{dark: lightsout}">
+    <div class="centerblock centertext">
+      <h1>Welcome to</h1>
+      <div ng-if="!lightsout" class="jumbotron text-center">
+        <h1><b>Benjamin Huang's</b></h1>
+        <h2><b>Showcase</b></h2>
+      </div>
+      <h1 ng-if="lightsout"><b>Benjamin Huang's</b></h1>
+      <h2 ng-if="lightsout"><b>Showcase</b></h2>
+
+      <p>benjaminthuang@gmail.com</p>
+      <a href="https://github.com/CoolConfucius" target="_blank">https://github.com/CoolConfucius</a>
+    </div>
+    <br>
+    <div class="centerblock centertext">
+      <h2>Education and Experience: </h2>
+      <h3>The Coding House Institute, Fremont, CA</h3>
+      <p>Intensive Fullstack Software Web Developer Boot Camp</p>
+      <p>Student from late August 2015 to mid October 2015</p>
+      <p>Student from early January 2016 to late Febuary 2016</p>
+      <p>Code Mentor from late February 2016 to present</p>
+      <h3>Santa Clara University, Santa Clara, CA</h3>
+      <p>BS, Computer Science; Minor in Creative Writing--Graduated in June 2015</p>
+      <p>Pi Mu Epsilon Computing Honors Society</p>
+      <p>GPA: 3.69</p>
+      
+      <p></p>
+    </div>
+
+    <div class="centerblock">
+      <table class="table">
+        <thead>
+          <tr>
+            <th><h4> Skills</h4></th>
+            <th><h4></h4></th>
+            <th><h4> Exposure </h4></th>
+            <th><h4></h4></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <ul ng-class='{light: !lightsout}'>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>jQuery</li>
+                <li>Bootstrap</li>
+                <li>Mongo DB</li>
+              </ul>
+            </td>
+            <td>
+              <ul ng-class='{lightodd: !lightsout}'>
+                <li>Express JS</li>
+                <li>Angular JS</li>
+                <li>Node JS</li>
+                <li>Firebase</li>
+                <li>Jade</li>
+              </ul>
+            </td>
+            <td>
+              <ul ng-class='{light: !lightsout}'>
+                <li>React JS</li>
+                <li>Angular Fire</li>
+                <li>Passport</li>
+                <li>Ionic</li>
+                <li>Ember JS</li>
+                <li>ZURB Foundation</li>
+                <li>C++</li>
+              </ul>
+            </td>
+            <td>
+              <ul ng-class='{lightodd: !lightsout}'>
+                <li>C</li>
+                <li>Assembly</li>
+                <li>SQL</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>Scheme</li>
+                <li>Scala</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody>
+      </table>    
+    </div>
+
+    <div class="centerblock" ng-class='{hidedeets: hidedeets}'>    
+      <h2>Programming Projects:</h2>
+      <button ng-if="hidedeets" ng-click="toggledeets()" class="btn btn-success btn-sm">Show Descriptions</button>
+      <button ng-if="!hidedeets" ng-click="toggledeets()" class="btn btn-warning btn-sm">Hide Descriptions</button>
+      <button ng-if="!allprojects" ng-click="toggleprojects()" class="btn btn-success btn-sm">Show More Projects</button>
+      <button ng-if="allprojects" ng-click="toggleprojects()" class="btn btn-warning btn-sm">Show Less Projects</button>
+      <ul>
+        <li>
+          <a href="https://autovision.herokuapp.com/" target="_blank">
+            <h4>Autovision</h4>
+          </a>
+          <a href="https://github.com/909socal/autovision-epic" target="_blank" class="btn btn-sm" ng-class='{"btn-info": !lightsout, "btn-default": lightsout}'>View on GitHub</a>
+
+          <p>A car parts trading app. Done in MEAN Stack with User Authentication as a group. </p>
+        </li>
+
+        <li>
+          <a href="https://tranquil-lake-86813.herokuapp.com/" target="_blank">
+            <h4>Full stack product list app in Firebase, Mongoose, Express, jQuery, and Jade</h4>
+          </a>
+          <a href="https://github.com/CoolConfucius/WishList" target="_blank" class="btn btn-sm" ng-class='{"btn-info": !lightsout, "btn-default": lightsout}'>View on GitHub</a>
+
+          <p>The Product Wish List lets you keep track of items that you want to buy but not immediately, or items you're considering to buy. You can: Get an organized view of your list; Add items to your list; View showpages with details of your items; Remove items from your list; Update items on your list; Get a grand total price of your list; Filter and sort items on your list.</p>
+        </li>
+        <li>
+          <a href="http://coolconfucius.github.io/BlackJack21/" target="_blank">
+            <h4>Single Player Blackjack 21 against AI in jQuery</h4>
+          </a>
+          <a href="https://github.com/CoolConfucius/BlackJack21" target="_blank" class="btn btn-sm" ng-class='{"btn-info": !lightsout, "btn-default": lightsout}'>View on GitHub</a>
+          <p>User plays against an AI with a standard deck of 52 cards. Face cards count as ten points. Player and AI can count an ace as 1 point or 11 points. Other cards are counted as their numeric value. Both players begin with two cards. User can choose to “hit”, add a card to their hand, or “stand”, take no cards. The player whose hand exceeds 21 is busted. When neither busts, the player with higher points win. Can also place bets. Wins and loses are stored in local storage.</p>
+        </li>
+        <li>
+          <a href="http://coolconfucius.github.io/BattleShip/bs.html" target="_blank">
+            <h4>Single Player Battleship against AI in jQuery</h4>
+          </a>
+          <a href="https://github.com/CoolConfucius/BattleShip" target="_blank" class="btn btn-sm" ng-class='{"btn-info": !lightsout, "btn-default": lightsout}'>View on GitHub</a>
+          <p>Two 10x10 grids. User places 5 ships of lengths—2, 3, 3, 4, 5 squares—onto their grid. May place the ships horizontally or vertically. On the other grid, the AI has 5 ships of the same lengths placed randomly. All ships must be within their grids and not overlap. AI’s ships are hidden from the user.  User and AI take turns hitting a square on each other’s grid. When a ship is hit, the square is marked as hit. Else, the square is marked as miss. The player who sinks all their opponent’s ships wins.</p>
+        </li>
+        <li>
+          <a href="https://gametrade2016.herokuapp.com/" target="_blank">
+            <h4>Game Trading app</h4>
+          </a>
+          <a href="https://github.com/CoolConfucius/20160203" target="_blank" class="btn btn-sm" ng-class='{"btn-info": !lightsout, "btn-default": lightsout}'>View on GitHub</a>
+          <p>Pair programmed fullstack app made in Mongoose with Firebase Authentication. Registered users can: post their games for trade; Select games that and offer games to trade; Accept or decline trades offered by other users.</p>
+        </li>
+
+        <li>
+          <a href="https://p20160202.herokuapp.com/" target="_blank">
+            <h4>Property management app in Mongoose and Jade, Pair Programming</h4>
+          </a>
+          <a href="https://github.com/CoolConfucius/property-management" target="_blank" class="btn btn-sm" ng-class='{"btn-info": !lightsout, "btn-default": lightsout}'>View on GitHub</a>
+          <p>A tool for landlords to oversee their apartments and for tenants to find, move in and out of rooms.</p>
+        </li>
+
+        <li>
+          <a href="https://p20160202.herokuapp.com/" target="_blank">
+            <h4>Mobile Weather App in jQuery, Bootstrap, using a weather API</h4>
+          </a>
+          <a href="https://github.com/CoolConfucius/WeatherApp" target="_blank" class="btn btn-sm" ng-class='{"btn-info": !lightsout, "btn-default": lightsout}'>View on GitHub</a>
+          <p>Search for a location by entering a state and city or a zipcode. Gets forecast information from Wunderground, a weather API. Search history is saved in local storage.</p>
+        </li>
+        <li>
+          <a href="http://coolconfucius.github.io/FirebaseTicTacToe/" target="_blank">
+            <h4>Real-time two player Tic Tac Toe in jQuery and Firebase</h4>
+          </a>
+          <a href="https://github.com/CoolConfucius/FirebaseTicTacToe" target="_blank" class="btn btn-sm" ng-class='{"btn-info": !lightsout, "btn-default": lightsout}'>View on GitHub</a>
+          <p>Game only starts when there are two players. Only two players may play in one game. Standard Tic Tac Toe rules are applied.</p>
+        </li>
+
+        <li>
+          <a href="http://coolconfucius.github.io/angular-stock-tracker/" target="_blank">
+            <h4>Stock Tracker app in Angular using a stock API</h4>
+          </a>
+          <a href="https://github.com/CoolConfucius/angular-stock-tracker" target="_blank" class="btn btn-sm" ng-class='{"btn-info": !lightsout, "btn-default": lightsout}'>View on GitHub</a>
+          <p>Uses Markit on Demand, a stock API. Users can search for symbols, add symbols, get stock information on tracked symbols, and untrack symbols. Data is stored in local storage. </p>
+        </li>
+        <li ng-if="allprojects">
+          <a href="http://coolconfucius.github.io/vanillaCalculator/" target="_blank">
+            <h4>Calculator in jQuery</h4>
+          </a>
+          <a href="https://github.com/CoolConfucius/vanillaCalculator" target="_blank" class="btn btn-sm" ng-class='{"btn-info": !lightsout, "btn-default": lightsout}'>View on GitHub</a>
+          <p>Does addition, subtraction, multiplication, and division operations. Can insert decimal numbers and toggle between positive and negative numbers. Allows chain operations. </p>
+        </li>
+        <li ng-if="allprojects">
+          <a href="http://coolconfucius.github.io/TowersOfHanoi/" target="_blank">
+            <h4>Towers of Hanoi Game in jQuery</h4>
+          </a>
+          <a href="https://github.com/CoolConfucius/TowersOfHanoi" target="_blank" class="btn btn-sm" ng-class='{"btn-info": !lightsout, "btn-default": lightsout}'>View on GitHub</a>
+          <p>Begins with three stacks: the first one full with ordered disks and the other two empty. User can only move the top disk of a stack to the top of another stack. No disk can be placed on top of a smaller disk. User wins by moving all the disks to the third stack. Has a reset button. Can toggle the difficulty level (number of disks to play with). </p>
+        </li>
+        <li ng-if="allprojects">
+          <a href="http://coolconfucius.github.io/MemoryMatchGame/" target="_blank">
+            <h4>Memory Match Game in jQuery</h4>
+          </a>
+          <a href="https://github.com/CoolConfucius/MemoryMatchGame" target="_blank" class="btn btn-sm" ng-class='{"btn-info": !lightsout, "btn-default": lightsout}'>View on GitHub</a>
+          <p>16 cards faced down. Each card has a matching pair. Click a card to flip it. Win by finding all the matches.</p>
+        </li>
+        
+        <li ng-if="allprojects">
+          <a href="http://coolconfucius.github.io/TicTacToe2/" target="_blank">
+            <h4>Two Player Tic Tac Toe in jQuery</h4>
+          </a>
+          <a href="https://github.com/CoolConfucius/TicTacToe2" target="_blank" class="btn btn-sm" ng-class='{"btn-info": !lightsout, "btn-default": lightsout}'>View on GitHub</a>
+          <p>In a 3x3 grid, two users, take turns marking their symbol on the grid by clicking. The user who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins. </p>
+        </li>
+        <li ng-if="allprojects">
+          <a href="https://starwarscollector.herokuapp.com/" target="_blank">
+            <h4>Star Wars Collector</h4>
+          </a>
+          <a href="https://github.com/CoolConfucius/StarWarsCollector" target="_blank" class="btn btn-sm" ng-class='{"btn-info": !lightsout, "btn-default": lightsout}'>View on GitHub</a>
+          <p>An app built with Firebase Authentication, Mongo, and a Star Wars API. Register, login, find your favorite Star Wars characters and add them to your collection</p>
+        </li>
+
+
+        <li ng-if="allprojects">
+          <a href="http://coolconfucius.github.io/ContactList/" target="_blank">
+            <h4>Contact List app in jQuery, Bootstrap</h4>
+          </a>
+          <a href="https://github.com/CoolConfucius/ContactList" target="_blank" class="btn btn-sm" ng-class='{"btn-info": !lightsout, "btn-default": lightsout}'>View on GitHub</a>
+          <p>Add contacts to your list. Remove and edit them. Sort by clicking the headers. Click the same header again to reverse the order. Filter by contact category.</p>
+        </li>
+
+
+        <li ng-if="allprojects">
+          <a href="http://coolconfucius.github.io/to-watch-list/" target="_blank">
+            <h4>Films to Watch List app in Angular</h4>
+          </a>
+          <a href="https://github.com/CoolConfucius/to-watch-list" target="_blank" class="btn btn-sm" ng-class='{"btn-info": !lightsout, "btn-default": lightsout}'>View on GitHub</a>
+          <p>A tool to help users keep track of films they want to watch later. Can add, edit, remove, sort, and filter the films on the list. Data is stored in local storage.</p>
+        </li>
+
+
+
+      </ul>
+    </div>
+
+
+  </div>
