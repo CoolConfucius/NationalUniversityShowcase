@@ -6,6 +6,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('home', {url: '/', templateUrl: './html/home.html' })
     .state('tpes', {url: '/tpes', templateUrl: './html/tpes.html' })
+    .state('itl608literacylearningplan', {url: '/itl608literacylearningplan', templateUrl: './html/artifacts/itl608literacylearningplan.html' })
     // .state('developer', {url: '/developer', templateUrl: './html/developer.html' })
     .state('resume', {url: '/resume', templateUrl: './html/resume.html' })
     // .state('blog', {url: '/blog', templateUrl: './html/blog.html' })
