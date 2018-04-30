@@ -25,7 +25,7 @@ div.dark, div.dark > div {
     2px 0px 2px orange, 0px 2px 2px orange,   
     -2px -0px 2px orange, -0px -2px 2px orange;  
 }
-div.dark h1, div.dark h2, div.dark h3, div.dark a {
+div.dark h1, div.dark h2, div.dark h3, div.dark a, div.dark.artifact h4 {
   color: #333;
   text-shadow: 
     1px 0px 5px yellow, 0px 1px 5px yellow, 
@@ -33,7 +33,7 @@ div.dark h1, div.dark h2, div.dark h3, div.dark a {
     -1px -0px 5px yellow, -0px -1px 5px yellow, 
     -2px -1px 5px yellow, -1px -2px 5px yellow
 }
-div.dark h1:hover, div.dark h2:hover, div.dark h3:hover, div.dark a:hover{
+div.dark h1:hover, div.dark h2:hover, div.dark h3:hover, div.dark a:hover, div.dark.artifact h4:hover{
   color: #333;
   text-shadow: 
     1px 0px 5px yellow, 0px 1px 5px yellow, 
