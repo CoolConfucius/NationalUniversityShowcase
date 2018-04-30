@@ -87,3 +87,8 @@ div.hidedeets ul li p {
 .green {
   color: green;
 }
+
+.codeexperiment {
+  width: 50%;
+  height: 50%; 
+}
