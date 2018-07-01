@@ -30,7 +30,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/'); 
 });
 
-app.controller('mainCtrl', function($scope, $anchorScroll) {
+app.controller('mainCtrl', function($scope) {
 
   console.log("mainCtrl");
   $scope.lightsout = false; 
