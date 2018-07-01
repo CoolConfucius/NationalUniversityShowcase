@@ -30,7 +30,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.otherwise('/'); 
 });
 
-app.controller('mainCtrl', function($scope) {
+app.controller('mainCtrl', function($scope, $anchorScroll) {
 
   console.log("mainCtrl");
   $scope.lightsout = false; 
@@ -48,4 +48,9 @@ app.controller('mainCtrl', function($scope) {
     $scope.allprojects = !$scope.allprojects; 
   }
   
+  $scope.gototop = function(){
+    console.log("gototop");
+    document.documentElement.scrollTop = 0;
+  }
+
 }); 
