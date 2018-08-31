@@ -28,6 +28,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
     .state('blog', {url: '/blog', templateUrl: './html/blog.html' })
     .state('resourcespage', {url: '/resourcespage', templateUrl: './html/resourcespage.html' })
     .state('teachingpage', {url: '/teachingpage', templateUrl: './html/teachingpage.html' })
+    .state('fivedaylessonplan', {url: '/fivedaylessonplan', templateUrl: './html/fivedaylessonplan.html' })
   
   $urlRouterProvider.otherwise('/'); 
 });
