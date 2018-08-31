@@ -1,0 +1,367 @@
+<style>
+	table, td{
+		border: solid 3px;
+	}
+</style>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><a href="https://www.youtube.com/watch?v=-zk792efauQ&amp;t=5s" target="_blank">Introduction Video</a>&nbsp;</p>
+
+<h1><strong>Welcome to the Web&nbsp; </strong></h1>
+<p>Welcome, let's talk about the web, the thing that you're using right now. The web is this fast network of connected computers.</p>
+<p>What do we use websites for? Early on, researchers used websites to share their research. But now everybody uses it for pretty much everything. Maybe you use a social network to chat with your family, a photo website for sharing photos, or a news website to figure out what's going on in the world.</p>
+<p>So what's your favorite website? Actually, I have a better question. What website do you wish existed, but doesn't yet? Maybe a website about yourself or about something that you love? The cool thing is you can program a website yourself. Start brainstorming what you want to make because you'll be able to do it soon enough. First, let's back up a bit and clear up some terminology. What is the "web," exactly? Well, like I said, it's a bunch of connected computers that have websites. When a computer is connected to the web and spitting out a website, we call that computer a "server" because it's "serving" the website. A website is written using three languages: HTML, for marking up the website content; CSS, for styling it; and JavaScript, for making it interactive. How do users like you actually see those websites? You use an app dedicated for website browsing, like Chrome, Firefox, or Internet Explorer, and we call those apps "browsers." Which browser do you regularly use? You must be using that browser from some sort of device, like a laptop or phone. We call those devices "clients."</p>
+<p>There's lots more to learn about the web, but now I think it's about time to start having you write some HTML and CSS to make your own web pages.</p>
+<p><strong>&nbsp;</strong></p>
+<h1>Writing HTML</h1>
+<p><strong>What is HTML? </strong>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hyper Text Markup Language is a markup language, not a programming language. This means it describes content and structure. It focuses on semantics (meaning) to add context to what the coder is describing.</p>
+<p><strong>Text Editor for Coding </strong></p>
+<p>Before I go into the syntax of HTML, this is a good point for me to make sure all my students have a text editor used for coding. They will be using the text editor throughout the course. They are welcome to use either Sublime Text or Atom. I personally use Sublime Text, so it is the text editor I recommend. It is available in both Mac and Windows.</p>
+<p>I will go around the classroom making sure each student has the text editor downloaded and opened on their computer. This process should be simple. If there are students who are stuck, I can help them quickly. I encourage students who are ready to help those who may be stuck.</p>
+<p><strong>HTML Tag Syntax</strong></p>
+<p>Pseudo Example: &lt;tagname&gt;Your content goes here. &lt;/tagname&gt;</p>
+<ul>
+<li>The tagname is a keyword surrounded by angle brackets &lt; &gt;</li>
+<li>Come in sets. Opening tag and closing tag</li>
+<li>Opening tag: &lt;tagname&gt;</li>
+<li>Closing tag: &lt;/tagname&gt; &lt;= note the /</li>
+<li>The element content is everything between the tags</li>
+<li>Should all be lowercase</li>
+</ul>
+<p><strong>For example, the Paragraph &lt;p&gt; tag</strong></p>
+<p>&lt;p&gt;This is a paragraph.&lt;/p&gt;</p>
+<p>&lt;p&gt;This is a second paragraph.&lt;/p&gt;</p>
+<p>&nbsp;</p>
+<p>The two lines above produces the following:</p>
+<p>This is a paragraph</p>
+<p>This is a second paragraph</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>HTML is made to be nested</strong></p>
+<p>&lt;p&gt;This is a paragraph.&lt;/p&gt;</p>
+<p>&lt;p&gt;This is a &lt;strong&gt;second&lt;/strong&gt; paragraph.&lt;/p&gt;</p>
+<p>&nbsp;</p>
+<p>The two lines above produces the following:</p>
+<p>This is a paragraph</p>
+<p>This is a <strong>second</strong> paragraph</p>
+<p>&nbsp;</p>
+<p>In this example, the inline tag &lt;strong&gt; made the text &ldquo;second&rdquo; bold.</p>
+<p>&nbsp;</p>
+<p>Now, I want to see them write html code using paragraph tags and a strong tag. They can either follow my example or write their own text. The paragraph can be a description of the webpage they are building throughout this period. Then, I want to see them open their html files in the browser. They can do this by dragging their file icon into a new tab in the browser.</p>
+<p><strong>Block Elements</strong></p>
+<ul>
+<li>Most HTML elements are block level</li>
+<li>This means that they break the flow of the content</li>
+<li>Define flow of the document</li>
+<li>Some examples are: &lt;h1&gt;, &lt;p&gt;, &lt;ul&gt;, &lt;table&gt;, &lt;div&gt;</li>
+</ul>
+<p><strong>Unordered lists</strong></p>
+<p>&nbsp;&lt;ul&gt;</p>
+<p>&nbsp;&lt;li&gt;Item 1&lt;/li&gt;</p>
+<p>&nbsp;&lt;li&gt;Item 2&lt;/li&gt;</p>
+<p>&nbsp;&lt;/ul&gt;</p>
+<p>&nbsp;</p>
+<p>Produces:</p>
+<p>&nbsp;</p>
+<ul>
+<li>Item 1</li>
+<li>Item 2</li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>Ordered lists</strong></p>
+<p>&nbsp;&lt;ol&gt;</p>
+<p>&nbsp;&lt;li&gt;Item 1&lt;/li&gt;</p>
+<p>&nbsp;&lt;li&gt;Item 2&lt;/li&gt;</p>
+<p>&nbsp;&lt;/ol&gt;</p>
+<p>&nbsp;</p>
+<p>Produces:</p>
+<p>&nbsp;</p>
+<ol>
+<li>Item 1</li>
+<li>Item 2</li>
+</ol>
+<p>&nbsp;</p>
+<p><strong>Unordered and ordered lists can be nested</strong></p>
+<p>&nbsp;&lt;ul&gt;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Item 1</p>
+<p>&nbsp;&lt;ol&gt;</p>
+<p>&nbsp;&lt;li&gt;Sub item 1&lt;/li&gt;</p>
+<p>&nbsp;&lt;li&gt;Sub item 2&lt;/li&gt;</p>
+<p>&nbsp;&lt;/ol&gt;</p>
+<p>&nbsp;&lt;/li&gt;</p>
+<p>&nbsp;&lt;li&gt;Item 2&lt;/li&gt;</p>
+<p>&nbsp;&lt;/ul&gt;</p>
+<p>&nbsp;</p>
+<p>Produces:</p>
+<p>&nbsp;</p>
+<ul>
+<li>Item 1</li>
+</ul>
+<ol>
+<li>Sub item 1</li>
+<li>Sub item 2</li>
+</ol>
+<ul>
+<li>Item 2</li>
+</ul>
+<p>&nbsp;</p>
+<p>Now, I want to see my students creating lists with list items in their webpage. Their list can be instructions on baking a cake or anything that relates to their interests. I&rsquo;ll also ask them to use a header tag to title their ongoing webpage.</p>
+<p><strong>Inline Elements</strong></p>
+<ul>
+<li>Inline elements do not break the flow of content</li>
+<li>No newline is created</li>
+<li>Most often used for styling</li>
+<li>Some examples are &lt;b&gt;,</li>
+</ul>
+<p>This is a &lt;b&gt;bold&lt;/b&gt; statement.</p>
+<p><strong>&lt;div&gt; and &lt;span&gt; elements</strong></p>
+<ul>
+<li>&lt;div&gt; elements are block level containers that groups other elements</li>
+<li>&lt;span&gt; elements are inline level containers that groups text</li>
+</ul>
+<p>A span of te&lt;span style=&ldquo;font-weight:bold;&rdquo;&gt;xt is inl&lt;/span&gt;ine.</p>
+<p>Produces:</p>
+<p>A span of te<strong>xt is inl</strong>ine.</p>
+<p>&nbsp;</p>
+<p><strong>There are a lot of tags</strong></p>
+<ul>
+<li>Headings are described with the &lt;h1&gt; to &lt;h6&gt; tags</li>
+<li>Italics text is described with the &lt;i&gt; tags</li>
+<li>Bold text is described with the &lt;b&gt; or &lt;strong&gt; tags</li>
+<li>And so, so many more&hellip;</li>
+</ul>
+<p><strong>HTML Element Attributes</strong></p>
+<ul>
+<li>Attributes provide addi1onal informa1on of the elements</li>
+<li>Attributes are specified in the start tag</li>
+<li>Attributes are key="value" pairs:</li>
+</ul>
+<p>This is a &lt;span style="color: red;"&gt;&lt;/span&gt;.</p>
+<p><strong>Some common attributes</strong></p>
+<ul>
+<li>id: For adding a unique id for an element</li>
+<li>class: For adding one or more class names for an element for CSS targeting</li>
+<li>style: For inline CSS style for an element</li>
+<li>title: Extra title as a "tool tip"</li>
+</ul>
+<p>These terms may be unfamiliar now, but they will make sense later on.</p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hyperlinks using the &lt;a&gt; tag</strong></p>
+<p>&lt;a href="{url}" title="{text}"&gt;Link Text&lt;/a&gt;</p>
+<ul>
+<li>href attribute defines the URL that the link takes you to:</li>
+</ul>
+<p>&lt;a href="https://www.youtube.com/watch?v=6K16d6j9GRk"&gt;Gilbert Rocks!&lt;/a&gt;</p>
+<p>This is an example of an absolute path. Relative paths are more complex at this point and we don&rsquo;t need them for now.</p>
+<p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;img&gt; tag</strong></p>
+<p>&lt;img src="batman-shark-battle.gif" alt="POW! BAM! BOOM! WHAM!"/&gt;</p>
+<ul>
+<li>&lt;img&gt; tag doesn't need a closing tag. It is self-closing using /&gt;</li>
+<li>src attribute points to the URL of the image</li>
+<li>alt attribute specifies an alternative text description of the image</li>
+</ul>
+<p><strong>A HTML document contains nested elements</strong></p>
+<p>&lt;!DOCTYPE html&gt;</p>
+<p>&lt;html lang="en"&gt;</p>
+<p>&nbsp;&lt;head&gt;</p>
+<p>&nbsp;&lt;title&gt;</p>
+<p>&nbsp;My Document's Title</p>
+<p>&nbsp;&lt;/title&gt;</p>
+<p>&nbsp;&lt;/head&gt;</p>
+<p>&nbsp;&lt;body&gt;</p>
+<p>&nbsp;My content goes here.</p>
+<p>&nbsp;&lt;/body&gt;</p>
+<p>&lt;/html&gt;</p>
+<p>&nbsp;</p>
+<p>It&rsquo;s okay to not know completely what this means. Just know that this is the standard when writing an HTML file.</p>
+<p><strong>&lt;html&gt;, &lt;head&gt;, and &lt;body&gt;</strong></p>
+<ul>
+<li>The &lt;html&gt; tag wraps the whole document.</li>
+<li>The &lt;head&gt; tag is where you define top level info such as the document title.</li>
+<li>The &lt;body&gt; tag where your content belongs</li>
+</ul>
+<p><strong>Defining CSS in the &lt;head&gt;</strong></p>
+<p>CSS can be defined in the head tag like this:</p>
+<p>&lt;style&gt;</p>
+<p>&nbsp;.fire {</p>
+<p>&nbsp;color: red;</p>
+<p>&nbsp;}</p>
+<p>&lt;/style&gt;</p>
+<ul>
+<li>But the standard is to use an external CSS Stylesheet like this:</li>
+</ul>
+<p>&lt;link rel="stylesheet" href="styles.css"/&gt;</p>
+<p>This may seem confusing now but will make more sense later on when we go into CSS.</p>
+<p><strong>Defining JavaScript in the &lt;head&gt;</strong></p>
+<ul>
+<li>Example:</li>
+</ul>
+<p>&lt;script&gt;</p>
+<p>window.onload = function() {</p>
+<p>&nbsp;// Things that Batman does.</p>
+<p>&nbsp;alert( &lsquo;POW! BAM! BOOM! WHAM!&rsquo; )</p>
+<p>};</p>
+<p>&lt;/script&gt;</p>
+<ul>
+<li>But the standard is to use external JavaScript like this:</li>
+</ul>
+<p>&lt;script src="app.js"&gt;&lt;/script&gt;</p>
+<p>This may seem confusing now but will make more sense later on when we go into JavaScript.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Break</strong></p>
+<p>If the period is not over at this point, I think my students deserve a little break for learning so much material in one period. If there is more time, then I would like to introduce them to more advanced html tags such as the input tag, button tag, or table tag.</p>
+<p>With an input tag, students can create an input box for users to enter values such as a name or phone number. They can also create buttons for users to click on or tables with information related to their webpage.</p>
+<p>Until the period is over, I would like my students to make their webpage as cool as they can by using what we learned or beyond. This is also an opportunity for students to ask me questions.</p>
+<p>If there is a lot of time left, then I may go into the next topic: CSS.</p>
+<p><a href="https://www.youtube.com/watch?v=ATCqjWjuDyY" target="_blank">See the lesson in action</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h1>Writing CSS</h1>
+<p>&nbsp;</p>
+<table>
+<tbody>
+<tr>
+<td colspan="5">
+<p><strong>Teacher: Benjamin Huang</strong></p>
+<p><strong>Subject: Computer Science / Programming: Developing Web Applications </strong></p>
+<p><strong>Lesson Title: Writing CSS Code </strong></p>
+</td>
+</tr>
+<tr>
+<td colspan="4">
+<p><strong>Classroom Details</strong></p>
+<p><strong>Time:</strong> 20-30 minutes</p>
+<p><strong>Equipment:</strong> Computers, Projector</p>
+<p><strong>Resources:</strong> &nbsp;Sublime Text Editor</p>
+</td>
+<td>
+<p><strong>Content Details</strong></p>
+<p><strong>Grade: 6-12</strong></p>
+<p><strong>Standard(s): </strong>9-12.DA.8</p>
+<p>Translate between different representations of data abstractions of real-world phenomena, such as characters, numbers, and images.</p>
+<p><strong>Objective:</strong> Students should be able to, through defining CSS classes and ids, transform their web page in ways including: font family, font size, text color, background color, height, width, etc.</p>
+</td>
+</tr>
+<tr>
+<td colspan="5">&nbsp;</td>
+</tr>
+<tr>
+<td>
+<p><strong>Time in mins.</strong></p>
+</td>
+<td>
+<p><strong>Lesson Element</strong></p>
+</td>
+<td>
+<p><strong>What is the teacher doing?</strong></p>
+</td>
+<td colspan="2">
+<p><strong>What are the students doing?</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><em>0-1</em></p>
+<p><em>mins.</em></p>
+</td>
+<td>
+<p><strong>Student Friendly Objective</strong></p>
+</td>
+<td>
+<p><em>Tell students: </em></p>
+<p><em>By the end of the lesson you should be able to&hellip;</em></p>
+<p><em>Write CSS code in to style the static web page they have built from writing HTML code. </em></p>
+</td>
+<td colspan="2">
+<p>Students are getting excited imagining how they can make their web page look more exciting.</p>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>
+<p>0-1</p>
+<p>Mins</p>
+</td>
+<td>
+<p><strong>Link to prior knowledge</strong></p>
+<p><strong>(pre-assessment)</strong></p>
+</td>
+<td>
+<p>I remind my students they have learn how to build static web pages by writing HTML code. I will tell them that they will now learn how to style their web page by writing CSS code.</p>
+<p>In the pre-assessment, I interview my students or send them forms to determine their knowledge on CSS.</p>
+</td>
+<td colspan="2">
+<p>The students are reflecting on what they have learned previously.</p>
+<p>In the pre-assessment, they were communicating to me their knowledge on CSS.</p>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>
+<p>10-15</p>
+<p>Mins</p>
+</td>
+<td>
+<p><strong>Input / Modeling</strong></p>
+</td>
+<td>
+<p>I will be briefly going over the common features of CSS. For each feature, I will demonstrate an example. I will be showing students how to: decorate text, change the font color, Font family, size, and color; Background colors; widths, heights, alignments; The Box Model: Borders, paddings, and margins. On writing CSS selectors, I will show them how to write descendent selectors, class selectors, and id selectors.</p>
+</td>
+<td colspan="2">
+<p>The students are paying attention. Ideally, the students should be writing and testing my examples on their computers. This would be effective practice for them.</p>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>
+<p>5-10 mins</p>
+</td>
+<td>
+<p><strong>Guided Practice</strong></p>
+<p><strong>(checking for understanding)</strong></p>
+</td>
+<td>
+<p>For each topic on CSS, I will invite students to write CSS code with me. The projector will show what is on my text editor. I may ask the students questions. What should I include in the editor? Do you see a bug with this? What is my next step? Can I improve the code?</p>
+</td>
+<td colspan="2">
+<p>The students are answering my questions and asking their questions if they have any. They are following along the guided practice.</p>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>
+<p>5-10 mins</p>
+</td>
+<td>
+<p><strong>Independent Practice</strong></p>
+<p><strong>(ongoing assessment)</strong></p>
+</td>
+<td>
+<p>This is a good opportunity for students to take the next step on their ongoing project, the web application. I will ask my students to bring up the static web page they have built in HTML and style it by writing CSS code. I will be available to help students who need it.</p>
+</td>
+<td colspan="2">
+<p>The students are styling their webpage by writing CSS code. They are welcome to ask me questions if they are stuck.</p>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>
+<p>5-30 mins</p>
+</td>
+<td>
+<p><strong>Closure</strong></p>
+<p><strong>(post-assessment)</strong></p>
+</td>
+<td>
+<p>I will be asking my students to present their projects. I will evaluate the CSS code they have written and ask the students questions. What is your thought process when writing this line of code? Can you explain what this code does?</p>
+</td>
+<td colspan="2">
+<p>The students are presenting their project to me and answering my questions. They are communicating their learning clearly to me by showing me their code and their thought process.</p>
+</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
